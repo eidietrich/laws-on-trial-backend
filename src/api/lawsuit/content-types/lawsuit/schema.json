@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lawsuits",
+  "info": {
+    "singularName": "lawsuit",
+    "pluralName": "lawsuits",
+    "displayName": "Lawsuits",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "court": {
+      "type": "string",
+      "required": true
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "state_court",
+        "montana_supreme_court",
+        "federal_court",
+        "us_supreme_court"
+      ],
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "bill_challenges",
+        "judicial_authority",
+        "public_access"
+      ]
+    },
+    "plaintiffs": {
+      "type": "text"
+    },
+    "defendants": {
+      "type": "text"
+    },
+    "judge": {
+      "type": "text"
+    },
+    "docket_url": {
+      "type": "string"
+    },
+    "bills": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::bill.bill",
+      "inversedBy": "lawsuits"
+    },
+    "filings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::filing.filing",
+      "mappedBy": "lawsuit"
+    }
+  }
+}

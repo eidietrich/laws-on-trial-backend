@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filings",
+  "info": {
+    "singularName": "filing",
+    "pluralName": "filings",
+    "displayName": "Filings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date_filed": {
+      "type": "date",
+      "required": true
+    },
+    "filed_by": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lawsuit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lawsuit.lawsuit",
+      "inversedBy": "filings"
+    }
+  }
+}

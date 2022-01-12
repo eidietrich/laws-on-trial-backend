@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bills",
+  "info": {
+    "singularName": "bill",
+    "pluralName": "bills",
+    "displayName": "Bills"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Number": {
+      "type": "string"
+    },
+    "lawsuits": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lawsuit.lawsuit",
+      "inversedBy": "bills"
+    }
+  }
+}
