@@ -1,4 +1,3 @@
-id,name,created_at,updated_at,created_by_id,updated_by_id,date_filed,filed_by,description,case_number,filename
 1,Petition for Original Jurisdiction,1642019870265,1642019870265,1,1,03/17/2021,plaintiffs,Initial filing asking the court to declare SB 140 unconstitutional,OP-21-0125,2021-03-17-petition-for-original-jurisdiction.pdf
 2,Substitution Order,1642019870265,1642019870265,1,1,03/24/2021,the court,Replaces recused Chief Justice Mike McGrath with District Court Judge Kurt Krueger,OP-21-0125,2021-03-24-substitution-order.pdf
 3,Emergency Motion to Disqualify Judge Kurt Krueger,1642019870265,1642019870265,1,1,04/01/2021,defendants,"Asks for Krueger's recusal, citing Krueger's opposition to SB 140 in an internal judicial branch poll. Also requests a stay of the proceedings ""until such time as the Court can seat an impartial and independent judicial panel to decide this case""",OP-21-0125,2021-04-01-emergency-disqualification-motion.pdf
