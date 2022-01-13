@@ -18,7 +18,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::lawsuit.lawsuit",
-      "inversedBy": "bills"
+      "mappedBy": "bills"
     }
   }
 }

@@ -28,17 +28,24 @@
       "type": "text"
     },
     "pdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "lawsuit": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::lawsuit.lawsuit",
       "inversedBy": "filings"
+    },
+    "case_number": {
+      "type": "string"
+    },
+    "filename": {
+      "type": "string"
     }
   }
 }

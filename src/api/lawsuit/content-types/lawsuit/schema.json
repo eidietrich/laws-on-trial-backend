@@ -23,24 +23,6 @@
       "type": "string",
       "required": true
     },
-    "level": {
-      "type": "enumeration",
-      "enum": [
-        "state_court",
-        "montana_supreme_court",
-        "federal_court",
-        "us_supreme_court"
-      ],
-      "required": true
-    },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "bill_challenges",
-        "judicial_authority",
-        "public_access"
-      ]
-    },
     "plaintiffs": {
       "type": "text"
     },
@@ -64,6 +46,12 @@
       "relation": "oneToMany",
       "target": "api::filing.filing",
       "mappedBy": "lawsuit"
+    },
+    "level": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
     }
   }
 }
